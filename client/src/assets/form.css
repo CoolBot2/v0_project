@@ -1,0 +1,160 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.form {
+  width: 35%;
+  transform: translate(0, 10px);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5rem;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.5);
+}
+.form div {
+  width: 340px;
+  height: 75px;
+  justify-content: center;
+}
+.firstname {
+  margin-top: 10px;
+}
+.btn1 {
+  transform: translate(0, -25px);
+  width: 180px;
+  height: 50px;
+}
+.btn2 {
+  transform: translate(0, -25px);
+  width: 180px;
+  height: 50px;
+}
+.signup {
+  margin: 0;
+  padding: 0;
+  background-image: url("blob-scene-haikei.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 753px;
+  width: 100%;
+}
+.logo {
+  height: 200px;
+  width: 300px;
+  transform: translate(-750px, -40px);
+  position: absolute;
+  z-index: 5;
+}
+.checkbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 10px;
+  transform: translate(-45px, -25px);
+  background-color: transparent;
+  color: black;
+  font-weight: 600;
+}
+.text2 {
+  color: black;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  height: 40px !important;
+  transform: translate(0, -10px);
+  margin-top: 10px;
+}
+.text1 {
+  color: black;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  transform: translate(0, -12px);
+  box-sizing: content-box;
+  height: 20px !important ;
+}
+.login {
+  margin: 0;
+  padding: 0;
+  background-image: url("blob-scene-haikei.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 753px;
+  width: 100%;
+}
+.form-container-login {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  height: 100% !important;
+  width: 100%;
+}
+.login-form {
+  width: 35%;
+  height: 70%;
+  transform: translate(0, -50px);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5rem;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.5);
+}
+
+.btn1-login {
+  transform: translate(0, -25px);
+  width: 180px;
+  height: 50px;
+}
+.btn2-login {
+  transform: translate(0, -25px);
+  width: 180px;
+  height: 50px;
+}
+.logo-login {
+  height: 300px;
+  width: 300px;
+
+  z-index: 5;
+}
+.welcome-msg {
+  transform: translate(0, -70px);
+}
+.register-link {
+  color: black;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  height: 40px !important;
+}
+.forgot-link {
+  color: black;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+}
+.login-checkbox {
+  transform: translate(45px, 25px);
+}

@@ -1,0 +1,21 @@
+.friends {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  justify-content: center;
+  width: 400px;
+  height: 753px;
+  border-right: 2px solid black;
+  background-color: violet;
+}
+.userlist {
+}
+.friend {
+  width: 400px;
+  height: 85px;
+}
+.chatb {
+  display: flex;
+  flex-direction: column;
+}

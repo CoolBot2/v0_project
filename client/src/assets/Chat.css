@@ -1,0 +1,126 @@
+.messages-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 1090px;
+  height: 663px;
+  overflow: auto;
+  margin-left: 35px;
+}
+::-webkit-scrollbar {
+  display: none;
+  width: 10px;
+  background: gray;
+}
+.pfp {
+  width: 50px !important;
+  height: 50px !important;
+}
+.message-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  grid-gap: 10px;
+  width: 99%;
+  height: fit-content;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  border: 2px solid #f5f5f5;
+  margin-bottom: 10px;
+}
+.pfp-container {
+}
+.author {
+  transform: translate(-950px, 0);
+}
+.message {
+  transform: translate(60px, -50px);
+  width: 1000px !important;
+
+  overflow-wrap: break-word;
+
+  width: fit-content;
+  height: 15px;
+
+  align-items: center;
+
+  color: black;
+}
+
+.message::after {
+  content: "\a";
+  display: block;
+}
+
+.date {
+  transform: translate(-50px, 0);
+}
+.chat-header {
+  z-index: 57;
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  height: 60px;
+  border-bottom: rgba(209, 207, 207, 0.5) solid 1.5px;
+  background-clip: padding-box;
+}
+.input-container {
+  display: flex;
+  position: fixed;
+  width: 1136px;
+  height: 90px;
+
+  /* margin-top: 715px; */
+
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  border-top: rgba(209, 207, 207, 0.5) solid 2px;
+}
+.input-bar {
+  height: 50px;
+  width: 85%;
+  margin-left: 100px;
+
+  overflow: auto;
+  font-weight: 400;
+  font-size: large;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+.send-btn {
+  background-image: url("https://cdn-icons-png.flaticon.com/128/876/876777.png");
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+  color: #696666;
+  margin-left: 40px;
+  height: 40px;
+  width: 60px;
+  border-radius: 10px;
+  border: 2px solid #07cc38b4;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  background-position: center;
+  margin-bottom: 33px;
+}
+.send-btn:hover {
+  color: #fff;
+  background-color: #07cc38b4;
+  border-color: #07cc38b4;
+}
+.chat-title {
+  margin-left: 40px;
+  margin-bottom: -40px;
+}
+.noConversation {
+  position: absolute;
+  top: 12%;
+  font-size: 62px;
+  color: #b0b0b0;
+  text-align: center;
+  width: 75%;
+  cursor: default;
+}
