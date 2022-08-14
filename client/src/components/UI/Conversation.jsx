@@ -1,11 +1,8 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { getOneUser } from "../../redux/actions";
-
+import "../../assets/Convo.css";
 const Conversation = ({ conversation, currentUser }) => {
   const [user, setUser] = useState(null);
-  // const dispatch = useDispatch();
   useEffect(() => {
     const friendId = conversation.members.find((m) => m !== currentUser._id);
     const getUser = async () => {
@@ -26,17 +23,19 @@ const Conversation = ({ conversation, currentUser }) => {
       {"  "}
 
       <div className="friend">
-        <img
-          style={{
-            background: "white",
-            borderRadius: "50%",
-            width: "50px",
-            height: "50px",
-          }}
-          src={user && user.pfp}
-          alt=""
-        />
-        {user && user.userName}
+        <div className="profile-img">
+          <img
+            style={{
+              background: "white",
+              borderRadius: "50%",
+              width: "50px",
+              height: "50px",
+            }}
+            src={user && user.pfp}
+            alt=""
+          />
+        </div>
+        <div className="friend-name">{user && user.userName}</div>
       </div>
     </div>
   );

@@ -31,3 +31,12 @@ exports.showMsg = async (req, res) => {
     res.status(500).json({ msg: error.message });
   }
 };
+exports.deleteMsg = async (req, res) => {
+  const { messageId } = req.params;
+  try {
+    await MessageModel.findByIdAndDelete(messageId);
+    res.status(200).json({ msg: "message deleted" });
+  } catch (error) {
+    res.status(500).json({ msg: error.message });
+  }
+};

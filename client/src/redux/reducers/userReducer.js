@@ -9,6 +9,7 @@ import {
   LOGIN_USER,
   LOGIN_USER_FAILED,
   LOGIN_USER_SUCCESSFUL,
+  LOGOUT_USER,
   REGISTER_USER,
   REGISTER_USER_FAILED,
   REGISTER_USER_SUCCESSFUL,
@@ -32,6 +33,7 @@ export const userReducer = (state = initialState, { type, payload }) => {
     case REGISTER_USER:
     case LOGIN_USER:
     case GET_PROFILE:
+    case LOGOUT_USER:
       return { ...state, loading: true };
     case REGISTER_USER_SUCCESSFUL:
       return {

@@ -1,0 +1,17 @@
+.friend {
+  background-color: rgba(52, 59, 128, 1);
+  color: white;
+  height: 90px;
+  width: 100%;
+  cursor: pointer;
+}
+.friend:hover {
+  background-color: rgba(41, 47, 102, 1);
+  color: white;
+}
+.friend-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 10px;
+  transform: translate(65px, -50px);
+}
